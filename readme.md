@@ -15,3 +15,8 @@
 [10. Shared Context](https://github.com/caperaven/crs-binding-documentation/blob/master/10.shared_context.md)    
 [11. Widgets](https://github.com/caperaven/crs-binding-documentation/blob/master/11.widgets.md) 
  
+## Samples
+
+You can see crs-binding in action in this [samples application](https://crs-binding-examples.web.app/).  
+This application also provides links to source code behind the application and documentation explaining certain parts, how it was done and why.
+
