@@ -6,4 +6,4 @@ This document lays out a strategy on how to implement interactive graphics using
 
 ## Diagram
 
-![diagram]("https://github.com/caperaven/crs-binding-documentation/blob/master/strategies/images/interactive-graphics.jpg")
+![diagram](https://github.com/caperaven/crs-binding-documentation/blob/master/strategies/images/interactive-graphics.jpg)
