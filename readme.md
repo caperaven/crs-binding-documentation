@@ -21,3 +21,10 @@
 You can see crs-binding in action in this [samples application](https://crs-binding-examples.web.app/).  
 This application also provides links to source code behind the application and documentation explaining certain parts, how it was done and why.
 
+## Strategies
+
+Here are some documents on common strategies not exhibited in the above samples.
+
+[Dynamic popup content](https://github.com/caperaven/crs-binding-documentation/blob/master/strategies/dynamic-popup-content.md)  
+[Interactive graphics](https://github.com/caperaven/crs-binding-documentation/blob/master/strategies/interactive-graphics.md)  
+
