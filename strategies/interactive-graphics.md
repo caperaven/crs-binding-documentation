@@ -52,3 +52,65 @@ Additional information that the feature needs is accessed through:
 1. Attributes (if a custom element), as far as possible use `data-` attributes.
 1. Constructor (if a class)
 
+These are common states, but you can add more if required.
+
+1. None - do nothing but object picking through click events.
+1. Select - draw a selection rect that will set the selected items to all items that fit in that space.
+1. DrawBox - this state indicates that we are performing draw operations and require the marker to draw a box shaped marker.
+1. DrawLine - we are still drawing, but we require the marker to draw a line shaped marker. 
+
+Enable and disable events as you need it.  
+A example of this is to register mouse move and mouse up events once the mouse down event has fired.  
+These events are removed again on mouse up.  
+Each feature is responsible for managing it's own events.  
+If you are going to have different features using the same event management, consider using a base class.
+
+## Marker
+
+The marker is a custom component and is always present.
+It has only one concern and that is to draw a selection shape when the state allows for it.
+
+When drawing things like rectangles or boxed shaped items the marker needs to draw a box shape.  
+Typically, this box shape has no fill color but a dashed border pattern.  
+When drawing things like circles, lines or paths, the boxed selection marker does not make sense.  
+In those cases you want to draw a line selection marker.
+
+The marker component does not set state but only responds to state.  
+Events it requires for operation are enabled or disabled based on state.  
+For example, mousedown event on canvas is only present when we are doing selection or drawing.
+
+The marker posts two events during operation.
+
+1. "start-selection"    - fired when selection starts (mouse down)
+1. "update-selection"   - fired when selection changes (mouse move).
+
+The information you send depends on the selection type.  
+
+1. box selection - send x, y, width, height
+1. line selection - send x, y, x2, y2
+
+Events are published using <a href="https://github.com/caperaven/crs-binding-documentation/blob/master/7.event-aggregation.md">crsbinding.events.emitter.emit</a>
+
+## Renderer
+
+The renderer is a thin shell that manages the active render object.  
+It uses a property to set the active renderer based on the binding data on what it is rendering.  
+This can be either a custom element, or a class, either way it needs the following information.
+
+1. convention on what is being drawn.
+1. the name of the svg to draw in.
+
+The active render object does the actual object creation and manipulation.
+When the shape is "rectangle" we need to set the active renderer to the "rectangleRenderer".  
+If the shape is a "circle" the active renderer should be the "circleRenderer".  
+One of the easies ways to manage this is through a map where the key is the shape name and it returns you the renderer you need.  
+This way you can also easily register new shapes to the renderer through an "add" function that sets the renderer on the map.  
+This also allows you to easily override the default renderer if you need to.
+
+A active render object will need at least these two functions.
+
+1. create   - create the new shape and add it to the target canvas
+1. update   - update the dimensions of the shape based on the information provided
+
+Create is called when the marker fires the "start-selection" event.  
+Update is called when the marker fires the "update-selection" event.
