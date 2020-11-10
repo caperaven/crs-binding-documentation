@@ -16,6 +16,7 @@
 [11. Widgets](https://github.com/caperaven/crs-binding-documentation/blob/master/11.widgets.md)   
 [12. Api](https://github.com/caperaven/crs-binding-documentation/blob/master/12.api.md)  
 [13. HTML Fragments](https://github.com/caperaven/crs-binding-documentation/blob/master/13.html-fragments.md)
+[14. Value Converters](https://github.com/caperaven/crs-binding-documentation/blob/master/14.value-conversion.md)
  
 ## Samples
 
