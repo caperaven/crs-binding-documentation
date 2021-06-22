@@ -4,7 +4,7 @@
 
 [0. Introduction](https://github.com/caperaven/crs-binding-documentation/blob/master/0.%20index.md)  
 [1. View Base](https://github.com/caperaven/crs-binding-documentation/blob/master/1.%20viewbase.md)  
-[2. Bindable Element](https://github.com/caperaven/crs-binding-documentation/blob/master/2.%20bindable-element.md)  
+[2. Custom and Bindable Element](https://github.com/caperaven/crs-binding-documentation/blob/master/2.%20bindable-element.md)  
 [3. Binding Expressions](https://github.com/caperaven/crs-binding-documentation/blob/master/3.%20binding-expressions.md)  
 [4. Repeat UI](https://github.com/caperaven/crs-binding-documentation/blob/master/4.%20repeat-ui.md)  
 [5. Static UI](https://github.com/caperaven/crs-binding-documentation/blob/master/5.%20static-ui.md)  
