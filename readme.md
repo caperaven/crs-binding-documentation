@@ -17,8 +17,9 @@
 [12. Api](https://github.com/caperaven/crs-binding-documentation/blob/master/12.api.md)  
 [13. HTML Fragments](https://github.com/caperaven/crs-binding-documentation/blob/master/13.html-fragments.md)  
 [14. Value Converters](https://github.com/caperaven/crs-binding-documentation/blob/master/14.value-conversion.md)  
-[15. HTML Properties / innerHTML](https://github.com/caperaven/crs-binding-documentation/blob/master/15.html-properties.md)  
-[16. Template Store](https://github.com/caperaven/crs-binding-documentation/blob/master/16.templates-repository.md)  
+[15. HTML Properties / innerHTML](https://github.com/caperaven/crs-binding-documentation/blob/master/15.html-properties.md)    
+[16. Template Store](https://github.com/caperaven/crs-binding-documentation/blob/master/16.templates-repository.md)    
+[17. UI Hotswap](https://github.com/caperaven/crs-binding-documentation/blob/master/17.%20UI%20hotswap.md)  
  
 ## Samples
 
