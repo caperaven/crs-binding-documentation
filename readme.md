@@ -21,6 +21,8 @@
 [16. Template Store](https://github.com/caperaven/crs-binding-documentation/blob/master/16.templates-repository.md)    
 [17. UI Hotswap](https://github.com/caperaven/crs-binding-documentation/blob/master/17.%20UI%20hotswap.md)  
 [18. Translations](https://github.com/caperaven/crs-binding-documentation/blob/master/18.%20Translations.md) 
+[19. Processes] (https://github.com/caperaven/crs-binding-documentation/blob/master/19.%20Processes.md)
+
 ## Samples
 
 You can see crs-binding in action in this [samples application](https://crs-binding-examples.web.app/).  
